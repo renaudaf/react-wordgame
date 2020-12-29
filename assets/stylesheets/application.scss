@@ -1,10 +1,11 @@
-html, body {
+html,
+body {
   background: black;
   color: #00b800;
-  margin:0;
+  margin: 0;
   padding: 0;
   padding-top: 10px;
-  font-family: 'Press Start 2P', cursive;
+  font-family: "Press Start 2P", cursive;
   text-align: center;
 }
 
@@ -18,7 +19,7 @@ body {
   letter-spacing: 1px;
 }
 button {
-  font-family: 'Press Start 2P', cursive;
+  font-family: "Press Start 2P", cursive;
   text-decoration: black underline;
   font-weight: bold;
   display: block;
@@ -31,17 +32,17 @@ button {
 }
 
 h1 {
-  font-family: 'Bungee Outline', cursive;
+  font-family: "Bungee Outline", cursive;
   font-size: 40px;
-  text-align:center;
+  text-align: center;
 }
 
 h3 {
-  font-family: 'Bungee Outline', cursive;
+  font-family: "Bungee Outline", cursive;
 }
 
 textarea {
-  font-family: 'Press Start 2P', cursive;
+  font-family: 'Roboto', sans-serif;
   border: 3px solid black;
   width: 50%;
   margin: 0 auto;
@@ -49,6 +50,8 @@ textarea {
   height: 200px;
   background: #00b800;
   padding: 10px;
+  color: black;
+  font-size: large;
 }
 
 main {
