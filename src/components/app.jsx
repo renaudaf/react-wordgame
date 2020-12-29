@@ -9,12 +9,17 @@ function App() {
     setText(value);
   }
 
+  function wordCount(innerText) {
+    const wordsArr = innerText.trim().split(" ");
+    return wordsArr.filter(word => word !== "").length;
+  }
+
   return (
     <main>
       <h1>This is a word game</h1>
-      <textarea onChange={handleChange} />
+      <textarea value={text} onChange={handleChange} />
       <h3>Time remaining: </h3>
-      <button type="submit">Start the game</button>
+      <button type="submit" onClick={() => wordCount(text)}>Start the game</button>
       <h1>Number of words: {count} </h1>
     </main>
   );
