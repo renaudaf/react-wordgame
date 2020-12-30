@@ -1,0 +1,13 @@
+  const wordCount = (innerText) => {
+    const wordsArr = innerText.trim().split(" ").filter(word => word !== "");
+    const eWords = wordsArr.map((word) => {
+      fetch(`https://wagon-dictionary.herokuapp.com/${word}`)
+        .then(res => res.json())
+        .then(
+          (result) => {
+            console.log(result);
+          }
+        );
+    });
+    // console.log(eWords);
+  };
